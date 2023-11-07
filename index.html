@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Zeroc </title>
+    <link href="Zeroc.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="Zeroc.html">Accueil</a></li>
+            <li><a href="quisommesnous.html" >Qui sommes-nous?</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1> Projet Zeroc</h1> 
+        <h2> Suivez les étapes suvantes pour déterminer les meilleurs matériaux pour votre chantier</h2>
+        <ol class="etapes">
+            <li>Téléchargez le fichier Dynamo:</li>
+            <p>Ce fichier va vous permettre de récupérer les données du fichier Revit sur votre ordinateur.</p>
+            <a href="https://drive.google.com/file/d/1khiNykHvb1Vpeh_6F_hqIK_tnQIayidv/view?usp=drive_link" download>Télécharger le fichier Dynamo</a> <br>
+    
+            <li> Ouvrez votre fichier Revit</li>
+
+            <li>Lancez et executez Dynamo</li>
+            <p>Sélectionnez le chemin vers le dossier contenant le fichier dynamo téléchargé dans le lecteur Dynamo de REVIT
+                et exécutez le programme Dynamo.</p>
+
+            <li>Téléchargez et appliquez la macro suivante</li>
+             <p>Vous devez maintenant appliquer une macro qui vise à sélectionner les informations <br> qui nous seront utiles dans le document Excel.
+                Si vous rencontrez des difficultés, la démarche est expliquée <a href="https://support.microsoft.com/fr-fr/office/copier-un-module-de-macro-dans-un-autre-classeur-13c0938b-8432-4259-9177-a71f7e626de0" target="_blank"><span>ici</span></a>
+             </p>
+            
+            <li>Téléchargez l'Excel en sortie</li>
+            <p>Une fois le traitement terminé, téléchargez le fichier Excel résultant ici:</p>
+            
+            <input type="file" id="uploadExcel" accept=".xlsx">
+            <br>
+    
+            <li>Lancez le traitement des données</li>
+            <p>Utilisez l'Excel pour analyser les données et déterminer les meilleurs matériaux pour votre chantier.<br>
+                <br>
+                <button id="uploadButton">Envoyer Fichier</button>
+                <script src="scriptZeroc.js"></script>
+            </p>
+        </ol>
+    </div>
+    </body>
+<footer>
+   
+
+
+
+</footer>
+</html>
